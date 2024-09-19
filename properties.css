@@ -1,2 +1,16 @@
-p
-{font-size: 50px}
+.fixedfontpara {
+  font-size: 3vw;
+  color: #000000;
+  font-family: Arial, serif
+}
+
+.fixedfonth1 {
+  font-size: 5vw;
+  color: #000000;
+  font-family: "Lucida Console", monospace;
+}
+
+.fadingcells:hover {
+  background-color: #FFFFFF
+  transition: background-color 0.3
+}
