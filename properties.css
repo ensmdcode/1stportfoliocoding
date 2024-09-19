@@ -10,6 +10,12 @@
   font-family: "Lucida Console", monospace;
 }
 
+.fadingcells {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+}
+
 .cell {
   background-color: #000000;
   transition: background-color 0.3;
