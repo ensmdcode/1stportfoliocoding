@@ -10,7 +10,11 @@
   font-family: "Lucida Console", monospace;
 }
 
-.fadingcells:hover {
-  background-color: #FFFFFF
-  transition: background-color 0.3
+.cell {
+  background-color: #000000;
+  transition: background-color 0.3;
+}
+
+.fadingcells:hover .cell {
+  background-color: #FFFFFF;
 }
