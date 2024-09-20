@@ -14,14 +14,22 @@
       position: relative;
       display: block;
       width: 100%;
+      height:100%;
       cursor: pointer;
 }
 
 .cell {
   background-color: #000000;
   transition: background-color 0.5s;
+  color: #FFFFFF
+  transition: color 0.5s;
+}
+
+.fadingcells:hover {
+  background-color:#FFFFFF;
 }
 
 .fadingcells:hover .cell {
   background-color: #FFFFFF;
+  color: #000000
 }
