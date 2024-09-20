@@ -19,11 +19,13 @@
 }
 .fadingcells {
   background-color:#000000;
+  transition: background-color 0.5s;
 }
+
 .cell {
   background-color: #000000;
   transition: background-color 0.5s;
-  color: #FFFFFF
+  color: #FFFFFF;
   transition: color 0.5s;
 }
 
@@ -33,5 +35,5 @@
 
 .fadingcells:hover .cell {
   background-color: #FFFFFF;
-  color: #000000
+  color: #000000;
 }
