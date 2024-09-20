@@ -17,7 +17,9 @@
       height:100%;
       cursor: pointer;
 }
-
+.fadingcells {
+  background-color:#000000;
+}
 .cell {
   background-color: #000000;
   transition: background-color 0.5s;
