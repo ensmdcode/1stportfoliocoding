@@ -10,15 +10,16 @@
   font-family: "Lucida Console", monospace;
 }
 
-.fadingcells {
+.fadingcells .cell{
       position: relative;
-      display: inline-block;
+      display: block;
+      width: 100%;
       cursor: pointer;
 }
 
 .cell {
   background-color: #000000;
-  transition: background-color 0.3;
+  transition: background-color 0.5s;
 }
 
 .fadingcells:hover .cell {
