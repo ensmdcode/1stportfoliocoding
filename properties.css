@@ -1,8 +1,9 @@
 .fixedfontpara {
-  font-size: 3vw;
+  font-size: 1em;
   color: #000000;
   font-family: Arial, serif;
   font-weight: bold;
+  text-align: center;
 }
 
 .fixedfonth1 {
