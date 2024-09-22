@@ -36,3 +36,21 @@
 .fadingcells:hover .cell {
   color: #000000;
 }
+
+.fadingcells .activities {
+  visibility: hidden;
+  opacity: 0;
+  width:9%;
+  display: block;
+  background-color: #FFFFFF;
+  transition: opacity 0.5s;
+  position: absolute;
+  color: #000000;
+  text-align: center;
+}
+
+.fadingcells:hover .activities {
+  visibility: visible;
+  opacity: 1;
+}
+  
