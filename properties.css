@@ -47,6 +47,7 @@
   position: absolute;
   color: #000000;
   text-align: center;
+  z-index: 4;
 }
 
 .fadingcells:hover .activities {
