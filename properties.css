@@ -40,15 +40,16 @@
 .fadingcells .activities {
   visibility: hidden;
   opacity: 0;
-  width: 10%;
+  width: 9.5%;
   display: block;
-  background-color: #FFFFFF;
+  background-color: #D3D3D3;
   transition: opacity 0.5s;
   position: absolute;
   color: #000000;
   text-align: center;
   z-index: 4;
-}
+  top: 16%;
+  margin-left: -0.25%;
 
 .fadingcells:hover .activities {
   visibility: visible;
