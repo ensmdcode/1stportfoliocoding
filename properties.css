@@ -42,14 +42,14 @@
   opacity: 0;
   width: 9.5%;
   display: block;
-  background-color: #F3F3F3;
+  background-color: #F8F8F8;
   transition: opacity 0.5s;
   position: absolute;
   color: #000000;
   text-align: center;
   z-index: 4;
-  top: 17%;
-  margin-left: -0.1%;
+  top: 2em;
+  margin-left: -1em;
 }
 
   
