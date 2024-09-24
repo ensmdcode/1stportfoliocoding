@@ -48,8 +48,9 @@
   color: #000000;
   text-align: center;
   z-index: 4;
-  top: 5em;
-  margin-left: -0.25em;
+  top: 7em;
+  margin-left: -0.1em;
+  border-radius: 1px;
 }
 
   
