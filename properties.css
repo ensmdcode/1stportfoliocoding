@@ -40,7 +40,7 @@
 .fadingcells .activities {
   visibility: hidden;
   opacity: 0;
-  width: 9.5%;
+  width: 11%;
   display: block;
   background-color: #F8F8F8;
   transition: opacity 0.5s;
@@ -48,9 +48,10 @@
   color: #000000;
   text-align: center;
   z-index: 4;
-  top: 7em;
-  margin-left: -0.1em;
-  border-radius: 1px;
+  top: 7.2em;
+  margin-left: -0.9em;
+  border-radius: 6px;
+  padding: 1%;
 }
 
   
@@ -60,11 +61,11 @@
 }
   
 .fadingcells .activities::after {
-  content:""
-  width: 9.5%;
-  border-color: transparent transparent black transparent
-  transition: opacity 0.5s;
+  content:" ";
+  position: absolute:
+  border-color: transparent transparent #F8F8F8 transparent;
   bottom: 100%;
-  margin-left: -0.1em;
-  border-width: 2em;
+  margin-left: -10%;
+  border-width: 0.5em;
+  border-style: solid;
 }
