@@ -62,7 +62,7 @@
   
 .fadingcells .activities::after {
   content:" ";
-  position: absolute:
+  position: absolute;
   border-color: transparent transparent #F8F8F8 transparent;
   bottom: 100%;
   margin-left: -10%;
