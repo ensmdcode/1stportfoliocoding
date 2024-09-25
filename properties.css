@@ -40,7 +40,7 @@
 .fadingcells .activities {
   visibility: hidden;
   opacity: 0;
-  width: 11%;
+  width: 10%;
   display: block;
   background-color: #F8F8F8;
   transition: opacity 0.5s;
@@ -65,7 +65,7 @@
   position: absolute;
   border-color: transparent transparent #F8F8F8 transparent;
   bottom: 100%;
-  margin-left: -10%;
+  margin-left: -4%;
   border-width: 0.5em;
   border-style: solid;
 }
