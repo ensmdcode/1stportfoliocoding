@@ -40,7 +40,7 @@
 .fadingcells .activities {
   visibility: hidden;
   opacity: 0;
-  width: 9em;
+  width: 8%;
   display: block;
   background-color: #F8F8F8;
   transition: opacity 0.5s;
@@ -48,8 +48,8 @@
   color: #000000;
   text-align: center;
   z-index: 4;
-  top: 7.2em;
-  margin-left: -0.9em;
+  top: 7.2%;
+  margin-left: -1%;
   border-radius: 6px;
   padding: 1%;
 }
@@ -69,3 +69,18 @@
   border-width: 0.5em;
   border-style: solid;
 }
+
+.popup {
+  color: #000000;
+  background-color: rgba(248, 248, 248, 1);
+  transition: backround-color 0.5s;
+  position: relative;
+  display: block;
+  width: 100%;
+  height:100%;
+  cursor: pointer;
+}
+
+.fadingpopup:hover .popup {
+  background-color: rgba(0, 255, 255, 0.3);
+  }
