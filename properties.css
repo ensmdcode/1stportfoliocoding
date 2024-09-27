@@ -1,3 +1,8 @@
+body {
+  background-image: url('BGIMAGE.jpg');
+  background-attachment: fixed; 
+}
+
 .fixedfontpara {
   font-size: 2em;
   color: #000000;
