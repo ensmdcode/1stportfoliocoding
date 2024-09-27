@@ -87,6 +87,10 @@ body {
   cursor: pointer;
 }
 
+.fadingpopup {
+  color: #000000;
+}
+
 .fadingpopup:hover .popup {
   background-color: rgba(0, 255, 255, 0.3);
   }
