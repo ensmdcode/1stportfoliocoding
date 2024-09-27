@@ -4,7 +4,7 @@ body {
 }
 
 .fixedfontpara {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #000000;
   font-family: Arial, serif;
   font-weight: bold;
@@ -20,11 +20,11 @@ body {
 }
 
 .fadingcells .cell {
-      position: relative;
-      display: block;
-      width: 100%;
-      height:100%;
-      cursor: pointer;
+  position: relative;
+  display: block;
+  width: 100%;
+  height:100%;
+  cursor: pointer;
 }
 .fadingcells {
   background-color:#000000;
