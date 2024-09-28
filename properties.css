@@ -94,3 +94,7 @@ body {
 .fadingpopup:hover .popup {
   background-color: rgba(0, 255, 255, 0.3);
   }
+
+.listlink {
+  color: #000000;
+}
