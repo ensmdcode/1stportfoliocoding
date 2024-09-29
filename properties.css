@@ -1,6 +1,7 @@
 body {
   background-image: url('BGIMAGE.jpg');
   background-attachment: fixed; 
+  background-size: cover;
 }
 
 .fixedfontpara {
