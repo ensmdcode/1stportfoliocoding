@@ -322,6 +322,20 @@ table {
     font-size: 1.4vw;
 }
 
+#creditslol {
+    background-color: #00FF00;
+    border: 0.15vw solid #000000;
+    margin: 2vw;
+    margin-left: 70vw; 
+    text-shadow: 0.15vw 0.15vw 0 #000000, -0.15vw -0.15vw 0 #000000, -0.15vw 0.15vw 0 #000000, 0.15vw -0.15vw 0 #000000; 
+    color: #80FF77;
+    font-size: 2.5vw;
+    transition: background-color 0.4s, border 0.4s, margin-left 0.4s;
+    width: 16vw;
+    text-align: center;
+    height: 3vw;
+    cursor: pointer;
+}
 
 /* ABOUT ME */
 
