@@ -19,7 +19,7 @@ body {
         position: fixed;
         top: 2.5vw;
         right: 5vw;
-        z-index: 2;
+        z-index: 20;
     }
 }
 
@@ -28,7 +28,7 @@ body {
         position: fixed;
         bottom: 2.5vw;
         right: 5vw;
-        z-index: 2;
+        z-index: 20;
     }
 }
 
@@ -43,7 +43,7 @@ body {
     border-top-left-radius: 75vw;
     border-bottom-left-radius: 75vw;
     transform-origin: right center;
-    z-index: 1;
+    z-index: 19;
     border: 0.3vw solid #000000;
     box-sizing: border-box;
     overflow: hidden;
