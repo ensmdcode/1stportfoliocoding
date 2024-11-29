@@ -71,30 +71,41 @@
                 </td>
               </tr>
             </table>
-            <hr style="width: 85vw; margin: 0 auto;">
-            <h1 style="margin-left: 2vw; text-shadow: 0.15vw 0.15vw 0 #000000, -0.15vw -0.15vw 0 #000000, -0.15vw 0.15vw 0 #000000, 0.15vw -0.15vw 0 #000000; color: #80FF77;"> Credits </h1>
-            <ul class="name" style="width: 80vw; text-align: left;">
-                <li> Logo, Thonk emoji, Space Invader Icon, "Holy Moly", Music Icon, Both GIF in Lesson and Outputs, Thumbs Up Emoji, ALL FROM GOOGLE </li>
-                <li> Powerpoints by Ms. Uminga </li>
-                <li> Gallery Pictures taken by
-                    <ul>
-                        <li> Me</li>
-                        <li> RJ</li>
-                        <li> Sofia</li>
-                        <li> Ralph </li>
-                    </ul>
-                </li>
-                <li> All Music and their respective Creators 
-                    <ul>
-                        <li> About Me & Reflection - Dark World by Mikel </li>
-                        <li> Lessons - Faithful Mission by Artificial Music </li>
-                        <li> Browser Outputs - Chill by Sakura Hz </li>
-                        <li> Gallery - Retro Funky by Perséphone (SUNDANCE Remix)</li>
-                        <li> Survey - This Isn't Science Rocket by F777 (2015 Version) </li>
-                    </ul>
-                </li>
-                <li> Everyone! (Thank you for Reading, if you haven't read yet, check out About Me and the others.) </li>
+            <br/>
+            <button id="creditslol"> Credits </button>
+            <ul class="name" id="crediting" style="width: 80vw; text-align: left;">
+                
             </ul>
+        </div>
+
+        <script> 
+            document.getElementById("creditslol").onclick=function() {
+                document.getElementById("creditslol").style.backgroundColor = "transparent";
+                document.getElementById("creditslol").style.border = "0 solid #000000";
+                document.getElementById("creditslol").style.marginLeft = "2vw";
+                document.getElementById("crediting").innerHTML = `
+                        <li> Logo, Thonk emoji, Space Invader Icon, "Holy Moly", Music Icon, Both GIF in Lesson and Outputs, Thumbs Up Emoji, ALL FROM GOOGLE </li> 
+                        <li> Powerpoints by Ms. Uminga </li>
+                        <li> Gallery Pictures taken by
+                            <ul>
+                                <li> Me</li>
+                                <li> RJ</li>
+                                <li> Sofia</li>
+                                <li> Ralph </li>
+                            </ul>
+                        </li>
+                        <li> All Music and their respective Creators 
+                            <ul>
+                                <li> About Me & Reflection - Dark World by Mikel </li>
+                                <li> Lessons - Faithful Mission by Artificial Music </li>
+                                <li> Browser Outputs - Chill by Sakura Hz </li>
+                                <li> Gallery - Retro Funky by Perséphone (SUNDANCE Remix)</li>
+                                <li> Survey - This Isn\'t Science Rocket by F777 (2015 Version) </li>
+                            </ul>
+                        </li>
+                        <li> Everyone! (Thank you for Reading, if you haven\'t read yet, check out About Me and the others.) </li>` ;
+                }
+            </script>
         </div>
 
         <!-- FOOTER -->
