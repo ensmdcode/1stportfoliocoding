@@ -19,7 +19,7 @@ body {
         position: fixed;
         top: 2.5vw;
         right: 5vw;
-        z-index: 20;
+        z-index: 21;
     }
 }
 
@@ -28,7 +28,7 @@ body {
         position: fixed;
         bottom: 2.5vw;
         right: 5vw;
-        z-index: 20;
+        z-index: 21;
     }
 }
 
