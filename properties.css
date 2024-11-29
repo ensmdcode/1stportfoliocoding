@@ -3,15 +3,55 @@
 body {
     background-image: url('BGIMAGE.jpg');
     background-attachment: fixed; 
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
   }
   
   ::-webkit-scrollbar {width: 1.2vw;}
   ::-webkit-scrollbar-track {background: #313131;}
   ::-webkit-scrollbar-thumb {background: #56e8cd; border-radius: 1vw; border: 0.3vw solid #313131;}
   ::-webkit-scrollbar-thumb:hover {background: #56e8cd; border-radius: 1vw; border: 0.25vw solid #313131;}
+
+/*BACKGROUND MUSIC*/
+@media (orientation:portrait) {
+    .musicbutton {
+        position: fixed;
+        top: 2.5vw;
+        right: 5vw;
+        z-index: 2;
+    }
+}
+
+@media (orientation:landscape) {
+    .musicbutton {
+        position: fixed;
+        bottom: 2.5vw;
+        right: 5vw;
+        z-index: 2;
+    }
+}
+
+.volume {
+    background-color: #FFFFFF;
+    width: 0vw;
+    transition: width 0.4s;
+    position: absolute;
+    top: 0;
+    right: 1.5vw;
+    height: 3vw;
+    border-top-left-radius: 75vw;
+    border-bottom-left-radius: 75vw;
+    transform-origin: right center;
+    z-index: 1;
+    border: 0.3vw solid #000000;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.musicbutton:hover .volume {
+    width: 20vw;
+}
 
 /*NAVIGATION AREA*/
 
