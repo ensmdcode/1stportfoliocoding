@@ -39,7 +39,7 @@ body {
     position: absolute;
     top: 0;
     right: 1.5vw;
-    height: 3vw;
+    height: 4vw;
     border-top-left-radius: 75vw;
     border-bottom-left-radius: 75vw;
     transform-origin: right center;
@@ -50,7 +50,7 @@ body {
 }
 
 .musicbutton:hover .volume {
-    width: 20vw;
+    width: 25vw;
 }
 
 /*NAVIGATION AREA*/
