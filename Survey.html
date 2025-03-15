@@ -8,6 +8,8 @@
 
     <body>
 
+        <div style="width: 100vw; height: 100vh; background-color: rgb(50, 50, 50); display: none; z-index: 20; position: fixed; filter: blur(25vw);" id="testing">  </div>
+
     <!-- BACKGROUND MUSIC -->
     <div style="width: 4vw; height: 4vw;" class="musicbutton">
         <img src="musicicon.png" alt="musicicon" style="width: 100%; height: 100%; z-index: 20; position: relative;">
@@ -47,7 +49,7 @@
 
         <!-- CONTENT-->
         <div class="para">
-            <form action="mailto:emmansumido22@gmail.com" method="post" enctype="text/plain" style="margin: 2vw;">   
+            <form action="mailto:emmansumido22@gmail.com" method="post" enctype="text/plain" style="margin: 2vw;" onsubmit="formsub()">   
                       <div style="float:left; font-weight: bold;">
                         Name:   
                         <input type="text" name="name" required style="width: 13.8vw; height: 1.35vw; font-size: 1vw;"> <br>
@@ -91,8 +93,18 @@
                       <input type="radio" name="improv" value="Yep" required> Yes <br>
                       <input type="radio" name="improv" value="Yep"> No <br> <br>
 
-                      <input type="reset" value="Reset">
-                      <input type="submit" value="Submit">
+                      <input type="reset" value="Reset" onclick="formreset()">
+                      <input type="button" value="Submit" onclick="submission()">
+
+                      <!-- ALERT SUBMISSION -->
+
+                    <div id="testing1" class="confirmation"> 
+                        <div class="confirm"> Are you sure you want to submit this form? </div>
+                        <div class="hellnah"> <button class="cancellol" type="button" onclick="cancelsub()"> Cancel </button> </div>
+                        <div class="hellyeah"> <input class="submitlol" type="submit" value="Submit" onclick="dosub()"> </div>
+                    </div>
+                    
+
               </form>
               
         </div>
@@ -103,5 +115,34 @@
                <a href="#" target="_self" style="color: #000000; display: block; text-decoration: none;"> Tell us your Experience! </a>
             </div>
         </div>
+
+        
+
+        <script type="text/JAVASCRIPT">
+            function submission() {
+                    document.getElementById("testing").style.display="block";
+                    document.getElementById("testing1").style.display="block";
+                }
+                
+            function cancelsub() {
+                    document.getElementById("testing").style.display="none";
+                    document.getElementById("testing1").style.display="none";
+                    document.preventDefault();
+                }
+
+            function dosub() {
+                    document.getElementById("testing").style.display="none";
+                    document.getElementById("testing1").style.display="none";
+                }
+
+            function formsub() {
+                alert("Form Submitted!!");
+                }
+
+            function formreset() {
+                alert("Form Resetted!!");
+            }
+        </script>
+        
     </body>
 </html>
