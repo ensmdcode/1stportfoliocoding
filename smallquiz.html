@@ -1,0 +1,112 @@
+
+<html>
+    <head>
+        <title> Portfolio </title>
+        <link rel="stylesheet" href="properties.css" type="text/css">
+        <link rel="icon" href="cropped.png" type="icon">
+    </head>
+
+    <body>
+
+        <div style="width: 100vw; height: 100vh; background-color: rgb(50, 50, 50); display: none; z-index: 20; position: fixed; filter: blur(25vw);" id="testing">  </div>
+
+    <!-- BACKGROUND MUSIC -->
+    <div style="width: 4vw; height: 4vw;" class="musicbutton">
+        <img src="musicicon.png" alt="musicicon" style="width: 100%; height: 100%; z-index: 20; position: relative;">
+        <div class="volume"> 
+            <audio controls autoplay loop style="width: 100%; height: 100%;"> 
+                <source src="sciencerocket.mp3" type="audio/mp3"> 
+                Your browser does not support the audio element. 
+            </audio>
+        </div>
+    </div>
+        
+    <!-- NAVIGATION AREA -->    
+        <div class="navgrid1">
+            <div class="navimagediv"> <img src="coding.png" alt="Code" class="navimage"> </div>
+            <div class="navdiv"> The Continuation </div>
+            <div class="Home fadingcells"> <a href="HomePage.html" target="_self"> Home </a> </div>
+            <div class="Aboutme fadingcells"> <a href="Aboutme.html" target="_self"> About Me </a> </div>
+            <div class="Activities fadingcells"> 
+                <a href="Activities.html" target="_self"> Activities </a> 
+                <div class="span"> 
+                        <div> <a href="Activities.html" target="_self"> Lessons </a> </div>  
+                         <hr width="93%" style="border-color: #000000;"> 
+                        <div> <a href="Output.html" target="_self"> Browser Outputs </a> </div>
+                         <hr width="93%"  style="border-color: #000000;"> 
+                        <div> <a href="Gallery.html" target="_self"> Gallery </a> </div>
+                </div>
+            </div> 
+            <div class="Reflection fadingcells"> <a href="Reflection.html" target="_self"> Reflection </a> </div>
+            <div class="blank"> </div>
+        </div>
+        
+    <!-- MAIN CONTENT AREA --> 
+     <!-- HEAD-->
+        <div class="head">
+            Small Quiz
+        </div>
+
+        <!-- CONTENT-->
+        <div class="para">
+            <form action="mailto:emmansumido22@gmail.com" method="post" enctype="text/plain" style="margin: 2vw;" onsubmit="formsub()" name="itchy">   
+                                    
+                      HEY YOU! miss mo na ba siya ??  :3 <br>
+                      <input type="radio" name="miss" value="Yep" required> Yes <br>
+                      <input type="radio" name="miss" value="Idk" required> Idk <br>
+                      <input type="radio" name="miss" value="Naw"> No <br> <br>
+
+                      <input type="reset" value="Reset" onclick="formreset()">
+                      <input type="button" value="Submit" onclick="submission()">
+                </form>
+              
+        </div>
+
+        <!-- FOOTER -->
+        <div class="foot">
+            <div class="exp fadingfoot">
+               <a href="#" target="_self" style="color: #000000; display: block; text-decoration: none;"> Tell us your Experience! </a>
+            </div>
+        </div>
+
+        
+
+        <script type="text/JAVASCRIPT">
+            function submission() {
+                    var sub=document.itchy.miss.value;
+
+                    switch (sub) {
+                        case "Yep": alert("UY AKO RIN!!")
+                            break;
+                        case "Idk": alert("Luh (basta ako meron :3)")
+                            break;
+                        case "Naw": alert("Ay sayang, pero ako meron :33")
+                            break;
+                    
+                        default: alert("If you don't answer... edi mag-answer ka")
+                            break;
+                    }
+                }
+                
+            function cancelsub() {
+                    document.getElementById("testing").style.display="none";
+                    document.getElementById("testing1").style.display="none";
+                    document.preventDefault();
+                }
+
+            function dosub() {
+                    document.getElementById("testing").style.display="none";
+                    document.getElementById("testing1").style.display="none";
+                }
+
+            function formsub() {
+                alert("Form Submitted!!");
+                }
+
+            function formreset() {
+                alert("Form Resetted!!");
+            }
+        </script>
+        
+    </body>
+</html>x
