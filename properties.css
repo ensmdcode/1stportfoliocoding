@@ -306,6 +306,15 @@ table {
     width: 22vw;    
 }
 
+
+#welcome {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .by {
     text-align: center;
     margin: 0 auto;
@@ -322,20 +331,31 @@ table {
     font-size: 1.4vw;
 }
 
-#creditslol {
-    background-color: #00FF00;
-    border: 0.15vw solid #000000;
-    margin: 2vw;
-    margin-left: 70vw; 
-    text-shadow: 0.15vw 0.15vw 0 #000000, -0.15vw -0.15vw 0 #000000, -0.15vw 0.15vw 0 #000000, 0.15vw -0.15vw 0 #000000; 
-    color: #80FF77;
+#creditslol, #gaem {
+    background-color: #42f963;
+    border: 0;
+    border-top: 0.1vw solid #000000;
+    padding: 1vw;
+    padding-left: 4vw;
+    font-weight: bold;
+    text-align: left;
     font-size: 2.5vw;
-    transition: background-color 0.4s, border 0.4s, margin-left 0.4s;
-    width: 16vw;
-    text-align: center;
-    height: 3vw;
+    width: 90vw;
+    height: 6vw;
     cursor: pointer;
+    transition: all 0.2s;
 }
+
+#creditslolsub1, #creditslolsub2 {
+    transition: all 0.2s;
+}
+
+.creditslolsub1working, .creditslolsub2working {
+    transform: rotate(90deg);
+    transition: all 0.2s;
+}
+
+
 
 /* ABOUT ME */
 
@@ -403,7 +423,7 @@ table {
 .ref4:hover {background-color: #c5e640;}
 
 /* SURVEYY */
-input[type="submit"] {
+input[type="button"] {
     width: 6vw; 
     height: 2vw; 
     background-color: #e668ff; 
@@ -424,7 +444,7 @@ input[type="reset"] {
     border: 0.15vw solid #000000;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
     background-color: #f4bcff;
 }
 
@@ -432,6 +452,43 @@ input[type="radio"] {
     width: 0.8vw; 
     height: 0.8vw;
     border: 0.5vw solid #d5d5d5;
+}
+
+.confirm {
+    grid-area: confirm; 
+    font-weight: bold; 
+    font-size: 2vw; 
+    text-align: center; 
+    border-bottom: 0.2vw solid #000000; 
+    width: 23vw; 
+    padding: 1vw; 
+    padding-bottom: 2vw;
+}
+
+.hellnah {grid-area: no; border-right: 0.2vw solid #000000; width: 12.5vw; height: 4.5vw; display: inline-block; margin-right: -0.5vw;} 
+.hellyeah {grid-area: yes; width: 12.4vw; height: 4.5vw; display: inline-block; background-color: #00000000;}  
+.cancellol {display: inline; width: 100%; height: 100%; background-color: #00000000; border: 0; font-size: 1.2vw; transition: all 0.4s;}
+.cancellol:hover {font-weight: bold; background-color: #eeeeee;}
+.submitlol {display: inline; width: 100%; height: 100%; background-color: #00000000; border: 0; font-size: 1.2vw; background-color: #E668FF; transition: all 0.4s;}
+.submitlol:hover {background-color: #F4BCFF; font-weight: bold;}
+
+.confirmation {
+    display: grid;
+    grid-template-areas:
+      'confirm confirm'
+      'no yes';
+    grid-template-columns: 1fr 1fr;
+    width: 25vw; 
+    height: 15vw; 
+    background-color: #FFFFFF; 
+    display: none; 
+    z-index: 21; 
+    left:37.5vw; 
+    top: 12vw; 
+    position: fixed; 
+    border-radius: 2.5vw; 
+    border: 0.4vw solid #000000;
+    overflow: hidden;
 }
 
 /* LESSONS */
@@ -570,7 +627,7 @@ input[type="radio"] {
 
 /* DESCRIP AND IMAGE MODE*/
 
-button {
+#descmode, #imagemode {
     margin-left: 60vw;
     margin-bottom: -1vw;
     display: inline-block;
