@@ -3,14 +3,17 @@
         <title> Portfolio </title>
         <link rel="stylesheet" href="properties.css" type="text/css">
         <link rel="icon" href="cropped.png" type="icon">
+
     </head>
 
     <body>
         
+        <div style="width: 100vw; height: 100vh; background-color: rgb(30, 30, 30); display: block; z-index: 20; position: fixed; filter: blur(25vw);" id="testing"></div>
+
     <!-- NAVIGATION AREA -->    
         <div class="navgrid1">
             <div class="navimagediv"> <img src="coding.png" alt="Code" class="navimage"> </div>
-            <div class="navdiv"> The Continuation </div>
+            <div class="navdiv"> In the End... </div>
             <div class="Home fadingcells"> <a href="#" target="_self"> Home </a> </div>
             <div class="Aboutme fadingcells"> <a href="Aboutme.html" target="_self"> About Me </a> </div>
             <div class="Activities fadingcells"> 
@@ -36,7 +39,8 @@
         <!-- CONTENT-->
         <div class="para">
             <img src="thonk.jpg" alt="thonk" style="width:20vw; height:auto; float: left; margin-left: 3vw; margin-top: 1vw;">
-            <div class="by"> Brought to you by </div> 
+            <div id="welcome"></div>
+            <div class="by"> This portfolio is brought to you by </div> 
             <div class="name"> 
               Emmanuel John A. Sumido! <br/>
               Grade 9-Fairness 
@@ -72,40 +76,67 @@
               </tr>
             </table>
             <br/>
-            <button id="creditslol"> Credits </button>
-            <ul class="name" id="crediting" style="width: 80vw; text-align: left;">
-                
+            <button id="creditslol"> Credits‎   ‎ <img src="dropdownarrow.png" alt="arrow" style="height: 2vw; width: auto;" id="creditslolsub1"> </button>
+            <ul class="name" id="crediting" style="width: 84vw; text-align: left; padding-left: 4vw; padding-right: 2vw; padding-bottom: 2vw; padding-top: 2vw; background-color: #42f963; border-bottom: 0.1vw solid #000000;" hidden>
+                <li> Logo, Thonk emoji, Space Invader Icon, "Holy Moly", Music Icon, Both GIF in Lesson and Outputs, Thumbs Up Emoji, ALL FROM GOOGLE </li> 
+                <li> Powerpoints by Ms. Uminga </li>
+                <li> Gallery Pictures taken by
+                    <ul>
+                        <li> Me</li>
+                        <li> RJ</li>
+                        <li> Sofia</li>
+                        <li> Ralph </li>
+                        <li> Brylle </li>
+                        <li> LpSci Standard Press </li>
+                    </ul>
+                </li>
+                <li> All Music and their respective Creators 
+                    <ul>
+                        <li> About Me & Reflection - Dark World by Mikel </li>
+                        <li> Lessons - Faithful Mission by Artificial Music </li>
+                        <li> Browser Outputs - Chill by Sakura Hz </li>
+                        <li> Gallery - Retro Funky by Perséphone (SUNDANCE Remix)</li>
+                        <li> Survey - This Isn't Science Rocket by F777 (2015 Version) </li>
+                    </ul>
+                </li>
+                <li> Everyone! (Thank you for Reading, if you haven't read yet, check out About Me and the others.) </li>
             </ul>
         </div>
 
-        <script> 
+        <script type="text/Javascript"> 
             document.getElementById("creditslol").onclick=function() {
-                document.getElementById("creditslol").style.backgroundColor = "transparent";
-                document.getElementById("creditslol").style.border = "0 solid #000000";
-                document.getElementById("creditslol").style.marginLeft = "2vw";
-                document.getElementById("crediting").innerHTML = `
-                        <li> Logo, Thonk emoji, Space Invader Icon, "Holy Moly", Music Icon, Both GIF in Lesson and Outputs, Thumbs Up Emoji, ALL FROM GOOGLE </li> 
-                        <li> Powerpoints by Ms. Uminga </li>
-                        <li> Gallery Pictures taken by
-                            <ul>
-                                <li> Me</li>
-                                <li> RJ</li>
-                                <li> Sofia</li>
-                                <li> Ralph </li>
-                                <li> Brylle </li>
-                            </ul>
-                        </li>
-                        <li> All Music and their respective Creators 
-                            <ul>
-                                <li> About Me & Reflection - Dark World by Mikel </li>
-                                <li> Lessons - Faithful Mission by Artificial Music </li>
-                                <li> Browser Outputs - Chill by Sakura Hz </li>
-                                <li> Gallery - Retro Funky by Perséphone (SUNDANCE Remix)</li>
-                                <li> Survey - This Isn\'t Science Rocket by F777 (2015 Version) </li>
-                            </ul>
-                        </li>
-                        <li> Everyone! (Thank you for Reading, if you haven\'t read yet, check out About Me and the others.) </li>` ;
+                document.getElementById("crediting").hidden = !document.getElementById("crediting").hidden;
+                document.getElementById("creditslolsub1").classList.toggle("creditslolsub1working");
+                document.getElementById("creditslol").classList.toggle("creditslolactive");
                 }
+
+ 
+            window.onload=function() {
+                let notpromptlol=prompt("Before you proceed, What is your name? (Not required)");
+                let notpromptlol1=prompt("Before you proceed, Why are you here? (Not required)");
+                let notpromptlol2=prompt("Before you proceed, What is the meaning of life? (Not required)");
+
+                if(notpromptlol1==null || notpromptlol1=="") {
+                        notpromptlol1="Unknown Reason."
+                    }
+
+                    if(notpromptlol!==null && notpromptlol!=="") {
+                        document.getElementById("welcome").innerHTML="Well hello there <span style='color:#FF0000;'>" + notpromptlol + "</span>.  <br/> So you're here because of <span style='color:#FF0000;'>" + notpromptlol1 + "</span>."; 
+                        document.getElementById("testing").style.display="none";
+
+                        
+                    }
+
+                    else{
+                        document.getElementById("welcome").innerHTML="Well hello there <span style='color:#FF0000;'> Unknown Person</span>.  <br/> So you're here because of <span style='color:#FF0000;'>" + notpromptlol1 + "</span>";
+                        document.getElementById("testing").style.display="none";
+                    }
+
+
+
+
+                }
+
             </script>
         </div>
 
