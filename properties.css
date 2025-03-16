@@ -469,7 +469,7 @@ input[type="radio"] {
 .hellyeah {grid-area: yes; width: 12.4vw; height: 4.5vw; display: inline-block; background-color: #00000000;}  
 .cancellol {display: inline; width: 100%; height: 100%; background-color: #00000000; border: 0; font-size: 1.2vw; transition: all 0.4s;}
 .cancellol:hover {font-weight: bold; background-color: #eeeeee;}
-.submitlol {display: inline; width: 100%; height: 100%; background-color: #00000000; border: 0; font-size: 1.2vw; background-color: #E668FF; transition: all 0.4s;}
+.submitlol {display: inline; width: 100%; height: 100%; border: 0; font-size: 1.1vw; background-color: #E668FF; transition: all 0.4s;}
 .submitlol:hover {background-color: #F4BCFF; font-weight: bold;}
 
 .confirmation {
